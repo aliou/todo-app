@@ -1,0 +1,2 @@
+do not edit files in dist/
+always run tests before committing

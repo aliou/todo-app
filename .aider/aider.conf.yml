@@ -1,0 +1,5 @@
+[model]
+model = gpt-4o
+
+[history]
+format = markdown
