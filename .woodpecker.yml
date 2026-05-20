@@ -1,0 +1,7 @@
+pipeline:
+  lint:
+    image: node:20
+    commands:
+      - npm ci
+      - npm run lint
+      - npm run test
