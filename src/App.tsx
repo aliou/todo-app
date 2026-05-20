@@ -22,9 +22,14 @@ export default function App() {
   const remove = (id: number) =>
     setTodos(todos.filter((t) => t.id !== id));
 
+  const remaining = todos.filter((t) => !t.done).length;
+
   return (
     <div style={{ maxWidth: 480, margin: "2rem auto", fontFamily: "sans-serif" }}>
       <h1>Todo App</h1>
+      {todos.length > 0 && (
+        <p style={{ color: "#888", fontSize: "0.85rem" }}>{remaining} remaining</p>
+      )}
       <div>
         <input
           value={input}
